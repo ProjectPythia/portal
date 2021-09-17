@@ -88,7 +88,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
         tags = '\n'.join(tags)
 
         author_strs = set()
-        affiliation_strs = set()
+        institution_strs = set()
         for a in item['authors']:
             author_name = a.get('name', 'Anonymous')
             author_email = a.get('email', None)
@@ -98,20 +98,20 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
                 _str = author_name
             author_strs.add(_str)
 
-            affiliation_name = a.get('affiliation', None)
-            if affiliation_name:
-                affiliation_url = a.get('affiliation_url', None)
-                if affiliation_url:
-                    _str = f'<a href="{affiliation_url}">{affiliation_name}</a>'
+            institution_name = a.get('institution', None)
+            if institution_name:
+                institution_url = a.get('institution_url', None)
+                if institution_url:
+                    _str = f'<a href="{institution_url}">{institution_name}</a>'
                 else:
-                    _str = affiliation_name
-                affiliation_strs.add(_str)
+                    _str = institution_name
+                institution_strs.add(_str)
 
         authors_str = f"<strong>Author:</strong> {', '.join(author_strs)}"
-        if affiliation_strs:
-            affiliations_str = f"<strong>Affiliation:</strong> {' '.join(affiliation_strs)}"
+        if institution_strs:
+            institutions_str = f"<strong>Institution:</strong> {' '.join(institution_strs)}"
         else:
-            affiliations_str = ''
+            institutions_str = ''
 
         if len(item['description']) < max_descr_len:
             short_description = item['description']
@@ -125,7 +125,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 <h3 class="display-3">{item["title"]}</h3>
 {authors_str}
 <br/>
-{affiliations_str}
+{institutions_str}
 <p class="my-2">{item['description']}</p>
 <p class="my-2">{tags}</p>
 <p class="mt-3 mb-0"><a href="{item["url"]}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
@@ -141,7 +141,7 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
 <img src="{thumbnail}" class="gallery-thumbnail" />
 <div class="container">
 <a href="{item["url"]}" class="text-decoration-none"><h4 class="display-4 p-0">{item["title"]}</h4></a>
-<p class="card-subtitle">{authors_str}<br/>{affiliations_str}</p>
+<p class="card-subtitle">{authors_str}<br/>{institutions_str}</p>
 <p class="my-2">{short_description}</p>
 </div>
 </div>
