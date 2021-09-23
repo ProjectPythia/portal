@@ -1,17 +1,20 @@
 name: deploy-site
-
 on:
   push:
-    branches:
-      - main
-
+  pull_request:
+  workflow_dispatch:
 jobs:
-  deploy-site:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
+    if: github.repository == 'ProjectPythia/projectpythia.github.io'
     steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
       - uses: actions/checkout@v2
 
       - uses: conda-incubator/setup-miniconda@v2
@@ -30,9 +33,22 @@ jobs:
           conda env list
           cd portal
           make -j4 html
+      - name: Zip the site
+        run: |
+          set -x
+          set -e
+          if [ -f site.zip ]; then
+              rm -rf site.zip
+          fi
+          zip -r site.zip ./portal/_build/html
+      - uses: actions/upload-artifact@v2
+        with:
+          name: site-zip
+          path: ./site.zip
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.7.3
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./portal/_build/html
