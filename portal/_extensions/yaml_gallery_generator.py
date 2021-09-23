@@ -3,6 +3,7 @@ import pathlib
 from textwrap import dedent
 
 import yaml
+from truncatehtml import truncate
 
 
 def _tag_in_item(item, tag_str=None):
@@ -117,7 +118,9 @@ def build_from_items(items, filename, title='Gallery', subtitle=None, menu_html=
             short_description = item['description']
             modal_str = ''
         else:
-            short_description = item['description'][:max_descr_len] + ' <a class="modal-btn">...more</a>'
+            short_description = truncate(
+                item['description'], max_descr_len, ellipsis='<a class="modal-btn"> ...more</a>'
+            )
             modal_str = f"""
 <div class="modal">
 <div class="content">

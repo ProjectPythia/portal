@@ -10,7 +10,7 @@ repos:
       - id: double-quote-string-fixer
 
   - repo: https://github.com/ambv/black
-    rev: 21.6b0
+    rev: 21.9b0
     hooks:
       - id: black
 
@@ -29,7 +29,7 @@ repos:
     hooks:
       - id: seed-isort-config
   - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.8.0
+    rev: v5.9.3
     hooks:
       - id: isort
 
@@ -39,7 +39,7 @@ repos:
   #     - id: prettier
 
   - repo: https://github.com/nbQA-dev/nbQA
-    rev: 0.13.0
+    rev: 1.1.1
     hooks:
       - id: nbqa-black
         additional_dependencies: [black==20.8b1]

@@ -213,6 +213,8 @@
     - cartopy
     formats:
     - gallery
+  domains:
+      - data visualization
 
 - title: Contextily Documentation
   url: https://contextily.readthedocs.io
@@ -299,6 +301,8 @@
     - geocat-viz
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: GeoPandas Documentation
   url: https://geopandas.org
@@ -353,6 +357,8 @@
     - hvPlot
     formats:
     - tutorial
+    domains:
+      - data visualization
 
 - title: hvPlot Gallery
   url: https://hvplot.holoviz.org/reference/index.html
@@ -367,6 +373,8 @@
     - hvPlot
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: Ipyleaflet
   url: https://ipyleaflet.readthedocs.io
@@ -393,6 +401,8 @@
     - matplotlib
     formats:
     - documentation
+    domains:
+      - data visualization
 
 - title: Matplotlib Tutorial
   url: https://matplotlib.org/stable/tutorials/index.html
@@ -406,6 +416,8 @@
     - matplotlib
     formats:
     - tutorial
+    domains:
+      - data visualization
 
 - title: Matplotlib Gallery
   url: https://matplotlib.org/stable/gallery/index.html
@@ -419,6 +431,8 @@
     - matplotlib
     formats:
     - gallery
+    domains:
+      - data visualization
 
 - title: MetPy
   url: https://unidata.github.io/MetPy/latest/index.html
@@ -849,3 +863,299 @@
     - climate science
     - physical oceanography
     - data science
+
+- title: Your First Python Tutorial - Reading in a .txt File
+  url: https://youtu.be/Jog7ybd6amw
+  description: |
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
+  authors:
+    - name: Project Pythia
+    - name: Julia Kent
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-txtfile.jpeg
+  tags:
+    packages:
+      - pure python
+    formats:
+      - video
+
+- title: Your First Python Tutorial - Creating a Data Dictionary
+  url: https://youtu.be/5z6-t62x7Xs
+  description: |
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
+  authors:
+    - name: Project Pythia
+    - name: Julia Kent
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-datadict.jpeg
+  tags:
+    packages:
+      - pure python
+    formats:
+      - video
+
+- title: Your First Python Tutorial - Writing Functions
+  url: https://youtu.be/BerEf_3CsL8
+  description: |
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The conent to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
+  authors:
+    - name: Project Pythia
+    - name: Julia Kent
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-writingfx.jpeg
+  tags:
+    packages:
+      - pure python
+    formats:
+      - video
+
+- title: Your First Python Tutorial - Creating Your Own Package
+  url: https://youtu.be/6lbbTwGFcTc
+  description: |
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
+  authors:
+    - name: Project Pythia
+    - name: Julia Kent
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-firstpackage.jpeg
+  tags:
+    packages:
+      - pure python
+    formats:
+      - video
+
+- title: Your First Python Tutorial - Using a Built-In Package and Publishing Your Package
+  url: https://youtu.be/44QUMCh2ZHU
+  description: |
+    Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The conent to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
+  authors:
+    - name: Project Pythia
+    - name: Julia Kent
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-builtinpackage.jpeg
+  tags:
+    packages:
+      - pure python
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Jupyter Notebooks
+  url: https://youtu.be/xSzXvwzFsDU
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
+  authors:
+    - name: Project Pythia
+    - name: Kevin Paul
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-jupyter.jpeg
+  tags:
+    packages:
+      - jupyter
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Numpy
+  url: https://youtu.be/kstc-6uz7AQ
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `numpy`. The conent to follow along with this video is hosted on this <A href="https://colab.research.google.com/drive/1zcjaGXofLzUXkQzJKnANE9Z3yFUt0q7E?">Numpy Google Collab</A>.
+  authors:
+    - name: Project Pythia
+    - name: A Kootz
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-numpy.jpeg
+  tags:
+    packages:
+      - numpy
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Matplotlib
+  url: https://youtu.be/EiPRIdHQEmE
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anissa Zacharias
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-matplotlib.jpeg
+  tags:
+    packages:
+      - matplotlib
+    formats:
+      - video
+    domains:
+      - data visualization
+
+- title: Python Tutorial Seminar Series - Object Oriented Programming
+  url: https://youtu.be/GEFnL8C62u8
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing Object Oriented Programming. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/oop_hrrr_tutorial">Object Oriented Programming Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: A Kootz
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-oop.jpeg
+  tags:
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Cartopy
+  url: https://youtu.be/ivmd3RluMiw
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `cartopy`. The content to follow along with this video is hosted in this <A href="https://github.com/michaelavs/cartopy_tutorial">Cartopy Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Michaela Sizemore
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-cartopy.jpeg
+  tags:
+    packages:
+      - matplotlib
+      - cartopy
+    formats:
+      - video
+    domains:
+      - data visualization
+
+- title: Python Tutorial Seminar Series - Git and GitHub
+  url: https://youtu.be/fYkPn0Nttlg
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Kevin Paul
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-git.png
+  tags:
+    packages:
+      - git
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Pandas
+  url: https://youtu.be/BsV3ek7qsiM
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Max Grover
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+    - name: Drew Camron
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-pandas.jpeg
+  tags:
+    packages:
+      - pandas
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Xarray Part 1
+  url: https://youtu.be/Ss4ryKukhi4
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anderson Banihirwe
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-xarray1.jpeg
+  tags:
+    packages:
+      - xarray
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Xarray Part 2
+  url: https://youtu.be/2H_4drBwORY
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anderson Banihirwe
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-xarray2.jpeg
+  tags:
+    packages:
+      - xarray
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Dask Part 1
+  url: https://youtu.be/wn-QM6QUB_U
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anderson Banihirwe
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-dask1.jpeg
+  tags:
+    packages:
+      - dask
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Dask Part 2
+  url: https://youtu.be/yn4_-1pHC5k
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anderson Banihirwe
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-dask2.jpeg
+  tags:
+    packages:
+      - dask
+    formats:
+      - video
+
+- title: Python Tutorial Seminar Series - Plotting with GeoCAT
+  url: https://youtu.be/It231le1fAU
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: Anissa Zacharias
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-geocatplot.jpeg
+  tags:
+    packages:
+      - geocat-viz
+    formats:
+      - video
+    domains:
+      - data visualization
+
+- title: Python Tutorial Seminar Series - GeoCAT-Comp
+  url: https://www.youtube.com/watch?v=uiWDQKI8YTQ&t=6s
+  description: |
+    Recording from the Python Tutorial Seminar Series introducing `geocat-comp`. The content to follow along with this video is hosted in this <A href="https://github.com/pilotchute/geocat_comp_tutorial">GeoCat-Comp GitHub Repository</A>.
+  authors:
+    - name: Project Pythia
+    - name: A Kootz
+      affiliation: NCAR
+      affiliation_url: https://ncar.ucar.edu/
+  thumbnail: /_static/thumbnails/ptss-geocatcomp.jpeg
+  tags:
+    packages:
+      - geocat-comp
+    formats:
+      - video
