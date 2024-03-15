@@ -2,9 +2,6 @@ name: Update User Metrics
 
 on:
   workflow_dispatch:
-  schedule:
-    # Weekly Every Monday at 1PM UTC
-    - cron: '0 13 * * 1'
 
 env:
   portal_id: ${{  secrets.GA4_PORTAL_ID }}
@@ -32,17 +29,9 @@ jobs:
           pip install google-analytics-data
 
       - name: Get and Write Metrics to JSON
-        run: python get-metrics.py
+        run: |
+          curl -O https://raw.githubusercontent.com/jukent/projectpythia.github.io/metrics-api/.github/workflows/get-metrics.py
+          python get_metrics.py
 
       - name: Write Markdown File
         run: python write-metrics-md.py
-
-      - name: Push Changes
-        if: steps.Get-and-Write-Metrics.outputs == 1  # Conditional step execution
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add user_metrics.json
-          git add ../portal/metrics.md
-          git commit -m "Update user metrics"
-          git push

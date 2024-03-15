@@ -3,6 +3,9 @@ on:
   pull_request:
 
 jobs:
+  update-metrics:
+    uses: automate-metrics.yaml@main
+
   build:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:

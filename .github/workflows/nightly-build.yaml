@@ -6,6 +6,9 @@ on:
     - cron: '0 0 * * *' # Daily “At 00:00”
 
 jobs:
+  update-metrics:
+    uses: automate-metrics.yaml@main
+
   build:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
@@ -20,3 +23,10 @@ jobs:
     uses: ./.github/workflows/sphinx-link-checker.yaml
     with:
       path_to_source: 'portal'
+
+  deploy:
+      needs: build
+      uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+      with:
+        cname: projectpythia.org
+        publish_dir: 'portal/_build/html'
