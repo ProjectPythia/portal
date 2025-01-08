@@ -43,7 +43,11 @@ Project administrators are responsible for clarifying the standards of acceptabl
 
 ## Reporting
 
-Instances of unacceptable behavior can be brought to the attention of the project administrator(s) who may take any action as outlined in the Consequences section below.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the the @ProjectPythia/core GitHub handle as the community leaders in this group can view and manage the reported content, and hence are responsible for enforcement as outlined in the Consequences section below.
+
+All complaints will be reviewed and investigated promptly and fairly.
+
+All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
 ## Consequences
 
